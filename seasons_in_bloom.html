@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Southpaw Handmade — Seasons In Bloom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:300;400;500&family=Jost:300;400&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+  --cream:#f7f2eb;
+  --ink:#1e1a16;
+  --gold:#c9a96e;
+}
+
+body {
+  margin:0;
+  font-family:'Jost',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:2rem;
+}
+
+.hero h1 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3rem,8vw,6rem);
+  font-weight:300;
+}
+
+.hero p {
+  max-width:500px;
+  font-size:0.9rem;
+  letter-spacing:0.08em;
+  opacity:0.7;
+}
+
+/* COLLECTION SECTIONS */
+.collection {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:80vh;
+}
+
+.collection.reverse { direction:rtl; }
+.collection.reverse * { direction:ltr; }
+
+.collection img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.collection-content {
+  padding:4rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:1.5rem;
+}
+
+.collection-title {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2rem,4vw,3.5rem);
+}
+
+.collection-text {
+  max-width:400px;
+  line-height:1.8;
+  opacity:0.7;
+}
+
+.btn {
+  border:1px solid var(--ink);
+  padding:0.7rem 1.5rem;
+  text-decoration:none;
+  font-size:0.7rem;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+  width:fit-content;
+}
+
+.btn:hover {
+  background:var(--ink);
+  color:var(--cream);
+}
+
+/* STRIP */
+.strip {
+  text-align:center;
+  padding:5rem 2rem;
+  background:var(--ink);
+  color:var(--cream);
+}
+
+.strip h2 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2rem,5vw,4rem);
+}
+
+/* FOOTER */
+footer {
+  padding:2rem;
+  text-align:center;
+  font-size:0.75rem;
+  opacity:0.6;
+}
+
+@media(max-width:900px){
+  .collection { grid-template-columns:1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Southpaw Handmade</h1>
+  <p>
+    One Year of Bloom. A botanical journey through birth flowers &amp; nature's annual rhythm.
+  </p>
+</section>
+
+<!-- COLLECTION 1 -->
+<section class="collection">
+  <img src="/Images/Seasons In Bloom/ In Bloom/When the Garden Wakes Collection Pin.png" alt="When the Garden Wakes"/>
+  <div class="collection-content">
+    <h2 class="collection-title">When the Garden Wakes</h2>
+    <p class="collection-text">
+      Soft beginnings. Dew on leaves, pale light in the morning, and the first signs of life returning.
+      This collection captures that gentle shift from stillness into growth.
+    </p>
+    <a href="#" class="btn">View Collection</a>
+  </div>
+</section>
+
+<!-- COLLECTION 2 -->
+<section class="collection reverse">
+  <img src="/Images/Seasons In Bloom/In Full Bloom Collection .png" alt="In Full Bloom"/>
+  <div class="collection-content">
+    <h2 class="collection-title">In Full Bloom</h2>
+    <p class="collection-text">
+      Color, movement, and fullness. Every petal open, every detail alive.
+      A celebration of abundance at its most vibrant.
+    </p>
+    <a href="#" class="btn">View Collection</a>
+  </div>
+</section>
+
+<!-- COLLECTION 3 -->
+<section class="collection">
+  <img src="/Images/Seasons In Bloom/Abundant_Season_Hero.png" alt="Abundant Summer"/>
+  <div class="collection-content">
+    <h2 class="collection-title">Abundant Summer</h2>
+    <p class="collection-text">
+      Sun-warmed days, buzzing gardens, and long golden evenings.
+      This collection leans into richness, warmth, and the joy of more.
+    </p>
+    <a href="#" class="btn">View Collection</a>
+  </div>
+</section>
+
+<!-- COLLECTION 4 -->
+<section class="collection reverse">
+  <img src="/Images/Seasons In Bloom/gentle_close_hero.jpg" alt="Gentle Close"/>
+  <div class="collection-content">
+    <h2 class="collection-title">Gentle Close</h2>
+    <p class="collection-text">
+      A quiet exhale. Fading light, softened colors, and moments of reflection.
+      A reminder that endings can be just as beautiful as beginnings.
+    </p>
+    <a href="#" class="btn">View Collection</a>
+  </div>
+</section>
+
+<!-- STRIP -->
+<section class="strip">
+  <h2>A year spent watching what blooms, and when</h2> 
+  <p>Seasons in Bloom began as a sketch journal — one flower drawn each week, tracking what emerged from the garden, the hedgerow, and the florist's bucket. 
+    Over twelve months those sketches became a language: a visual almanac of bloom times, botanical silhouettes, and the particular quality of light each season carries.</p> 
+  <p style="margin-top:1.25rem;">Each pattern pairs the traditional birth flowers of each month with the broader flora of that season, creating a system that feels both personal and universal — intimate as a birthday, expansive as the year itself.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Southpaw Handmade — Curious Hands. Creative Heart.
+</footer>
+
+</body>
+</html>
