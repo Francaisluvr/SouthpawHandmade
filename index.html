@@ -419,7 +419,7 @@
 
         .category-header {
             display: flex;
-            align-items: baseline;
+            align-items: center;
             gap: 2rem;
             flex-wrap: wrap;
             margin-bottom: 2.5rem;
@@ -427,6 +427,16 @@
             border-bottom: 1px solid var(--light-grey);
         }
 
+        .category-header img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+        .card-image-wrap {
+            max-height: 320px;
+        }
         .category-title {
             font-family: var(--font-display);
             font-size: clamp(1.6rem, 2.5vw, 2.2rem);
